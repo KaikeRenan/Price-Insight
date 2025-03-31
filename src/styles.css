@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+
+:root {
+    --cor--primaria: #122b3f;
+    --cor--secundaria: #1dc9a1;
+    --texto1: #fff;
+    --texto2: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Jura;
+}
