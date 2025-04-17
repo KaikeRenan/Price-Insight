@@ -1,13 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+
 @charset "UTF-8";
 
 :root {
-    --cor--primaria: #122b3f;
-    --cor--secundaria: #1dc9a1;
-    --texto1: #fff;
-    --texto2: #000000;
+    --cor-primaria: #0c1c2c; 
+    --cor-secundaria: #1dc9a1; 
+    --texto1: #ffffff;
+    --texto2: #b0bec5;
+    --botao-fundo: #122b3f;
+    --botao-hover: #1a3a5a;
 }
-
+ 
 * {
     margin: 0;
     padding: 0;

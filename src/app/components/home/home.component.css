@@ -1,69 +1,106 @@
 * {
-    background-color: var(--cor--primaria);
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(bottom, #0e1d31, #091521);
+    color: var(--texto1);
 }
 
 header {
-    background-color: var(--cor--secundaria);
-    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
-    background-color: var(--cor--secundaria);
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 30px;
 }
 
 nav ul {
-    background-color: var(--cor--secundaria);
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
 }
 
 nav ul li {
-    background-color: var(--cor--secundaria);
     cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+    color: var(--cor-secundaria);
 }
 
-.login {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+nav ul li:hover {
+    color: var(--texto1);
+    
 }
+
 
 main {
+    background-color: var(--cor-primaria);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 70px);
+    text-align: center;
+    position: relative;
 }
 
-.content {
-    margin-left: 70px;
-    color: var(--texto1);
+.main-section {
+    position: relative;
+    max-width: 600px;
 }
 
 h1 {
-    background-color: var(--cor--secundaria);
-    padding: 10px;
-    border-radius: 20px;
-    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--texto1);
+    margin-bottom: 15px;
 }
 
-button {
-    background-color: var(--cor--secundaria);
+p {
+    font-size: 16px;
+    color: var(--texto2);
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 60%;
     border: none;
-    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto 15px;
+}
+
+
+button {
+    background-color: var(--botao-fundo);
+    color: var(--texto1);
+    font-weight: bold;
+    border: 2px solid var(--cor-secundaria);
+    padding: 12px 24px;
     cursor: pointer;
-    border-radius: 70px;
-    margin-top: 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #17a589;
+    background-color: var(--botao-hover);
+    transform: scale(1.05);
 }
