@@ -33,39 +33,39 @@ header {
     width: 30px;
 }
 
-nav ul {
+.header ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
+.header ul li {
     cursor: pointer;
     font-weight: bold;
     transition: color 0.3s;
     color: var(--cor-secundaria);
 }
 
-nav ul li:hover {
+.header ul li:hover {
     color: var(--texto1);
 }
 
-nav a:link {
+.header a:link {
     text-decoration: none;
     color: var(--cor-secundaria);
 }
 
-nav a:link:hover {
+.header a:link:hover {
     transition: color 0.3s;
     color: var(--texto1);
 }
 
-nav a:visited {
+.header a:visited {
     text-decoration: none;
     color: var(--cor-secundaria);
 }
 
-nav a:visited:hover {
+.header a:visited:hover {
     transition: color 0.3s;
     color: var(--texto1);
 }
@@ -81,6 +81,10 @@ main {
 }
 
 .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     max-width: 600px;
 }
@@ -98,35 +102,58 @@ p {
     margin-bottom: 20px;
 }
 
-hr {
-    width: 60%;
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 0 auto 15px;
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 150px;
+
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
+    width: 500px;
+    height: 100px;
+
+    border: 2px solid var(--cor-secundaria);
 }
 
+span.material-symbols-outlined {
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 100px;
+    color: white;
+    margin: 0px 5px 0px 5px;
+    transform: translateY(7px);
+}
 
-button {
+input#iemail, input#isenha {
+    padding: 7px;
+    width: 220px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+input#iemail:focus-within, input#isenha:focus-within {
+    background-color: whitesmoke;
+    outline: none;
+}
+
+input#entrar {
+    margin-top: 5px;
     background-color: var(--botao-fundo);
     color: var(--texto1);
     font-weight: bold;
     border: 2px solid var(--cor-secundaria);
-    padding: 12px 24px;
+    padding: 8px 24px;
     cursor: pointer;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
     font-size: 16px;
 }
 
-button:hover {
+input#entrar:hover {
     background-color: var(--botao-hover);
     transform: scale(1.05);
-}
-
-nav ul li a {
-    text-decoration: none;
-}
-
-nav ul li a:visited {
-    color: none;
 }

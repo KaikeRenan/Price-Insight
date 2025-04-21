@@ -33,39 +33,39 @@ header {
     width: 30px;
 }
 
-nav ul {
+.header ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
+.header ul li {
     cursor: pointer;
     font-weight: bold;
     transition: color 0.3s;
     color: var(--cor-secundaria);
 }
 
-nav ul li:hover {
+.header ul li:hover {
     color: var(--texto1);
 }
 
-nav a:link {
+.header a:link {
     text-decoration: none;
     color: var(--cor-secundaria);
 }
 
-nav a:link:hover {
+.header a:link:hover {
     transition: color 0.3s;
     color: var(--texto1);
 }
 
-nav a:visited {
+.header a:visited {
     text-decoration: none;
     color: var(--cor-secundaria);
 }
 
-nav a:visited:hover {
+.header a:visited:hover {
     transition: color 0.3s;
     color: var(--texto1);
 }
@@ -80,6 +80,15 @@ main {
     position: relative;
 }
 
+main ul {
+    list-style-type: none;
+    color: var(--texto1);
+}
+
+main li {
+    padding: 13px;
+}
+
 .main-section {
     position: relative;
     max-width: 600px;
@@ -92,41 +101,30 @@ h1 {
     margin-bottom: 15px;
 }
 
-p {
-    font-size: 16px;
-    color: var(--texto2);
-    margin-bottom: 20px;
-}
-
-hr {
-    width: 60%;
+/* hr {
+    width: 100%;
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgb(255, 255, 255);
     margin: 0 auto 15px;
+} */
+
+.members {
+    width: 400px;
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
+    border: 2px solid rgb(29, 201, 161);
 }
 
-
-button {
-    background-color: var(--botao-fundo);
+main ul a {
     color: var(--texto1);
-    font-weight: bold;
-    border: 2px solid var(--cor-secundaria);
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: all 0.3s ease-in-out;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: var(--botao-hover);
-    transform: scale(1.05);
-}
-
-nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:visited {
-    color: none;
+main ul i li a:hover {
+    color: var(--cor-secundaria);
+}
+
+main ul a:visited {
+    color: var(--texto1);
+    text-decoration: none;
 }
