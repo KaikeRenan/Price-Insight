@@ -1,1 +1,18 @@
-<router-outlet />
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="">
+        <span><a class="header" href="home" target="_self" rel="next">PRICE INSIGHT</a></span> 
+    </div>
+    <nav>
+        <ul>
+            <li><a class="header" href="sobre" target="_self" rel="next">Sobre</a></li>
+            <li><a class="header" href="services" target="_self" rel="next">Serviços</a></li>
+            <li><a class="header" href="contact" target="_self" rel="next">Contato</a></li>
+            <li><a class="header" href="login" target="_self" rel="next">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <router-outlet></router-outlet>
+</main>

@@ -1,74 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Jura', sans-serif;
-    box-sizing: border-box;
-}
 
-body {
-    background: linear-gradient(bottom, #0e1d31, #091521);
-    color: var(--texto1);
-}
-
-header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 30px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    cursor: pointer;
-    font-weight: bold;
-    transition: color 0.3s;
-    color: var(--cor-secundaria);
-}
-
-nav ul li:hover {
-    color: var(--texto1);
-}
-
-nav a:link {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-}
-
-nav a:link:hover {
-    transition: color 0.3s;
-    color: var(--texto1);
-}
-
-nav a:visited {
-    text-decoration: none;
-    color: var(--cor-secundaria);
-}
-
-nav a:visited:hover {
-    transition: color 0.3s;
-    color: var(--texto1);
-}
 
 main {
     background-color: var(--cor-primaria);
@@ -123,10 +53,3 @@ button:hover {
     transform: scale(1.05);
 }
 
-nav ul li a {
-    text-decoration: none;
-}
-
-nav ul li a:visited {
-    color: none;
-}

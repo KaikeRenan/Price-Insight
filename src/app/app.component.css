@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, #0e1d31, #091521); 
+    color: var(--texto1);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--texto1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--texto1);
+}
+
+a:visited {
+    color: var(--cor-secundaria);
+}
