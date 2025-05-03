@@ -1,0 +1,23 @@
+<p>sign-up works!</p>
+<div class="container">
+    
+    <div class="forms">
+        <h1>CADASTRO</h1>
+        <div class="name">
+            <img src="cracha.png" alt="">
+            <input type="text" name="name" placeholder="Insira seu nome" >
+        </div>
+        <div class="email">
+            <img src="user.png" alt="">
+            <input type="text" name="email" placeholder="Insira seu email" >
+        </div>
+        <div class="password">
+            <img src="cadeado.png" alt="">
+            <input type="text" name="password" placeholder="Insira sua senha" >
+        </div>
+        
+        
+        <a (click)="auth.emit(true)">Já possui conta?</a>
+        <button>Cadastrar</button>
+    </div>
+</div>

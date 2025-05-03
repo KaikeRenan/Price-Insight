@@ -7,7 +7,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 
 export const routes: Routes = [
     {
-        path: "home",
+        path: "",
         component: HomeComponent
         
     },

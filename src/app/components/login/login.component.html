@@ -1,24 +1,8 @@
 <main>
-    <section class="main-section">
-        <h1>Login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
-            ambiente.</p>
-        <div class="form">
-            <form action="login.php" method="POST" autocomplete="on">
-                <div class="campo">
-                    <span class="material-symbols-outlined">person</span>
-                    <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" autocomplete="email" required
-                        maxlength="30">
-                    <label for="iemail"></label>
-                </div>
-                <div class="campo">
-                    <span class="material-symbols-outlined">key</span>
-                    <input type="password" name="senha" id="isenha" placeholder="Digite sua senha"
-                        autocomplete="current-password" required minlength="8" maxlength="20">
-                    <label for="isenha"></label>
-                </div>
-                <input id="entrar" type="submit" value="Entrar">
-            </form>
-        </div>
-    </section>
+        
+    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+    <div class="container">
+        @if (auth) {<app-sign-in (auth)="auth=false"></app-sign-in>}
+        @else { <app-sign-up (auth)="auth=true"></app-sign-up>}   
+    </div>
 </main>
